@@ -8,8 +8,14 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = User.find(params[:id])
+    puts '000000000'
+    @user_edit = User.find(params[:id])
+    puts @user_edit.inspect, '11111111111'
+    puts '22222222222'
   end
+  # var number = 1
+  # console.log(number, '1111111')
+  # console.log('2222222')
 
   def update
     @user = User.find(params[:id])
